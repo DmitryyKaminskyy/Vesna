@@ -1,5 +1,8 @@
-# Vesna
-npm install
-bower install
-gulp build
-gulp
+# Start project
+
+```
+$ npm install
+$ bower install
+$ gulp build
+$ gulp
+```

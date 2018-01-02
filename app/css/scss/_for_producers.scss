@@ -1,0 +1,246 @@
+@import "costome_colors.scss";
+
+section#first__for_producers{
+	padding-bottom: 60px;
+	.section__caption{
+		background:#FAFAFA;
+		padding-bottom: 123px;
+		padding-top: 60px;
+	}
+	h2{
+		span{
+			font-size: 30px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: -0.01em;
+		}
+	}
+	.tabs{
+		.container{
+			position: relative;
+			.list__one{
+				z-index:3;
+				top: -60px;
+				left: -360px;
+			}
+			.list__two{
+				z-index:3;
+				bottom: -395px;
+				right: -100px;
+			}
+			.list__third{
+				top: 960px;
+				right: -455px;
+			}
+			.list__fourth{
+				top: 1550px;
+				left: -300px;
+				transform: rotate(0deg);
+			}
+			.list__seven{
+				top: 120px;
+				right: -220px;
+				display: none;
+			}
+		}
+		.tabs__content{
+			margin-top: 60px;
+			.caption{
+				padding-left: 85px;
+				position: relative;
+				&:before{
+					content:'';
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					display: block;
+					position: absolute;
+					width: 69px;
+					height: 63px;
+					background: url(../img/icons/producer_1.png) center center no-repeat;
+					background-size: cover;
+				}
+			}
+			.target{
+				margin-top: 65px;
+			}
+			.target__text{
+				font-size: 14px;
+				font-weight: 400;
+				margin-top: 44px;
+				line-height: 1.58em;
+			}
+			.plushki{
+				position: relative;
+				margin-top: 45px;
+				.plushki__item{
+					text-align: center;
+					.item__img{
+						height: 105px;
+						img{
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.turnover{
+				background: url(../img/producer__fon.jpg) center center no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				padding-bottom: 60px;
+				padding-top: 60px;
+				text-align: center;
+				margin-top: 60px;
+				h3{
+					color: #fff;
+					text-align: center;
+				}
+				.btn__yellow{
+					letter-spacing: -0.05em;
+					width: 270px;
+					margin-top: 30px;
+				}
+			}
+			.exhortation__caption{
+				margin-top: 60px;
+			}
+			.exhortation__caption.caption__last{
+				margin-top: 0;
+			}
+			.advantages{
+				display: block;
+				margin-top: 170px;
+				.advantages__item{
+					position: relative;
+					margin-top: 100px;
+					.item__wrapper{
+						height: 265px;
+						.advantages__caption{
+							position: relative;
+							font-size: 20px;
+							padding-left: 25px;
+							letter-spacing: 0;
+							.number{
+								display: inline-block;
+								bottom: 40px;
+								left: -8px;
+								position: absolute;
+								color: #5da5bf;
+								opacity: 0.3;
+								font-size: 135px;
+								font-weight: 700;
+							}
+						}
+						.advantages__text{
+							br{
+								display: none;
+							}
+							margin-top: 30px;
+							letter-spacing: -0.01em;
+						}
+					}
+				}
+			}
+			.exhortation{
+				margin-top: 40px;
+				letter-spacing: 0;
+			}
+			&:nth-child(3){
+				.caption{
+					padding-left: 45px;
+					&:before{
+						background: url(../img/icons/producer_6.png) center center no-repeat;
+						width: 29px;
+						height: 37px;
+					}	
+				}
+			}
+			&:nth-child(4){
+				.caption{
+					padding-left: 80px;
+					&:before{
+						background: url(../img/icons/producer_7.png) center center no-repeat;
+						width: 60px;
+						height: 53px;
+					}	
+				}
+			}
+			.partners{
+				margin-top: 40px;
+				span{
+					font-size: 16px;
+					font-weight: 700;
+				}
+			}
+			.marketing__wraper{
+				margin-left: 15px;
+				margin-top: 30px;
+				.marketing__activity{
+					margin-right: 40px;
+					vertical-align: top;
+					display: inline-block;
+					.item{
+						padding-left: 20px;
+						position: relative;
+						&:before{
+							position: absolute;
+							content:'';
+							width: 6px;
+							height: 6px;
+							background: #009246;
+							left: 4px;
+							top: 50%;
+							transform: translateY(-50%);
+							border-radius: 50%;
+						}
+					}
+					&:nth-child(2){
+						margin-right: 0;
+					}	
+				}
+			}
+			.btn__yellow{
+				width: 150px;
+				margin-top: 30px;
+				margin-right: 20px;
+				font-size: 15px;
+				font-weight: 700;
+				&:nth-child(1){
+					margin-left: 15px;
+				}
+				&:nth-child(2){
+					margin-right: 0;
+				}
+			}
+			.presentation{
+				margin-top: 45px;
+				.presentation_items{
+					padding-left: 40px;
+					position: relative;
+					&:before{
+						position: absolute;
+						content:'';
+						width: 6px;
+						height: 6px;
+						background:#009246;
+						border-radius: 50%;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 25px;
+					}
+				}
+			}
+			&:nth-child(4){
+				.btn__yellow{
+					width: 230px;
+				}
+			}
+		}		
+	}
+}
+
+.about__caption{
+	display: none;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}

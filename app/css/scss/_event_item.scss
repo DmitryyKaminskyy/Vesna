@@ -1,0 +1,152 @@
+@import "costome_colors.scss";
+
+section#first__event__item{
+	.main__content{
+		.container{
+			position: relative;
+			.list__one{
+				left: -370px;
+				top: 110px;
+			}
+		}
+		h2{
+			letter-spacing: 0.02em;
+			margin-top: 60px;
+			text-align: center;
+		}
+		.news__wrapper{
+			margin-top: 60px;
+			.row{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.news__img{
+					overflow: hidden;
+					img{
+						width: 100%; //570px
+						height: 250px;
+					}
+				}
+				.news__content{
+					//margin-top: 40px;
+					.content__data{
+						position: relative;
+						display: inline-block;
+						font-weight: 400;
+						font-size: 18px;
+						font-style: italic;
+						line-height: 1.5em;
+						padding-left: 47px;
+						margin-right: 37px;
+						&:before{
+							top: 0;
+							left: 0;
+							position: absolute;
+							content: '';
+							display: block;
+							width: 31px;
+							height: 29px;
+							background: url(../img/icons/kalendar.png) center center no-repeat;
+							background-size: cover;
+
+						}
+					}
+					.content__data__city{
+						position: relative;
+						display: inline-block;
+						font-weight: 400;
+						font-size: 18px;
+						font-style: italic;
+						line-height: 1.5em;
+						padding-left: 47px;
+						&:before{
+							top: 0;
+							left: 0;
+							position: absolute;
+							content: '';
+							display: block;
+							width: 31px;
+							height: 29px;
+							background: url(../img/icons/karta.png) center center no-repeat;
+							background-size: cover;
+
+						}
+					}
+					.content__text{
+						span{
+							text-transform: uppercase;
+						}
+						font-weight: 400;
+						letter-spacing: 0.01em;
+						margin-top: 25px;
+					}
+					.btn__yellow{
+						margin-top: 27px;
+					}
+				}
+			}
+			.main__content{
+				.content__text{
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+	.caption__download{
+		margin-top: 65px;
+	}
+	.file__download{
+		display: inline-block;
+		text-decoration: underline;
+		color: $link_color;
+		margin-right: 40px;
+		padding-left: 56px;
+		margin-top: 65px;
+		position: relative;
+		&:nth-child(1){
+			&:before{
+				position: absolute;
+				content: '';
+				bottom: -15px;
+				left: 0;
+				width: 40px;
+				height: 51px;
+				background: url(../img/icons/seminar_icon.png) center center no-repeat;
+				background-size: cover;
+			}
+		}
+		&:nth-child(2){
+			&:before{
+				position: absolute;
+				content: '';
+				bottom: -15px;
+				left: 0;
+				width: 40px;
+				height: 51px;
+				background: url(../img/icons/registration__icon.png) center center no-repeat;
+				background-size: cover;
+			}
+		}
+		&:nth-child(3){
+			&:before{
+				position: absolute;
+				content: '';
+				bottom: -15px;
+				left: 0;
+				width: 40px;
+				height: 51px;
+				background: url(../img/icons/schedule_icon.png) center center no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+	.btn__yellow.last__btn{
+		letter-spacing: -0.05em;
+		margin-top: 75px;
+		margin-bottom: 60px;
+	}	
+}

@@ -1,0 +1,131 @@
+@import "costome_colors.scss";
+
+section#otziv_personalniy{
+	padding: 60px 0;
+	.container{
+		.list__one{
+			top: 500px;
+			left: -100px;
+			@media screen and (max-width: 1321px) {
+				left: -200px;
+			}
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
+		}
+		.list__seven{
+			top: 180px;
+			right: -156px;
+			@media screen and (max-width: 1321px) {
+				right: -300px;
+			}
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
+		}
+	}
+	h2{
+		text-align: center;
+		line-height: 1.0em;
+		@media screen and (max-width: 375px) {
+			font-size: 30px;
+		}	
+	}
+	.slider__foto{
+		position: relative;	
+		margin-top: 30px;	
+		text-align: center;
+		.slider__foto__item{
+			//display: block;	
+			text-align: center;
+			.item__foto{
+				display: inline-block;
+				border-radius: 50%;
+				overflow: hidden;	
+			}
+			.item__fio{
+				margin-top: 40px;	
+				.fio{
+					@include bold;
+					font-size: 18px;
+					text-transform: uppercase;		
+				}
+				.position{
+					margin-top: 20px;	
+					@include regit;	
+					font-size: 14px;
+				}
+			}
+		}
+		.reviews__arrows_prev, .reviews__arrows_next{
+			position: absolute;
+			top: 25%;
+			transform: translateX(-50%);
+			cursor: pointer;
+			z-index: 1;
+			color: #000;
+			&:after{
+				position: absolute;
+				display: inline-block;
+				content: '';
+				width: 25px;
+				height: 25px;
+				background-color: #F9EB24;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				z-index: -1;
+			}
+		}
+		.reviews__arrows_prev{
+			left: 38%;
+			@media screen and (max-width: 992px) {
+				left: 30%;	
+			}
+			@media screen and (max-width: 767px) {
+				display: none!important;	
+			}
+		}
+		.reviews__arrows_next{
+			right: 37.65%;
+			@media screen and (max-width: 992px) {
+				right: 29.65%;
+			}
+			@media screen and (max-width: 767px) {
+				display: none!important;	
+			}	
+		}
+	}
+	.slider__description{
+		margin-top: 40px;
+		&:after, &:before{
+			content:'';
+			display: block;
+			position: absolute;
+			width: 33px;
+			height: 25px;
+			background-size: cover;
+			z-index: 999;
+		}
+		&:before{
+			top: -40px;	
+			left: -60px;
+			background: url(../img/icons/mark_1.png) center top;
+		}
+		&:after{
+			bottom: -40px;
+			right: -50px;
+			background: url(../img/icons/mark_2.png) center top;
+		}
+		.description__item{
+			position: relative;
+			@include reg;
+			font-size: 14px;
+		}
+	}
+	.btn__yellow{
+		margin-top: 95px;	
+		width: 280px;
+
+	}
+}

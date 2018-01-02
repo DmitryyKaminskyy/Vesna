@@ -1,0 +1,137 @@
+footer{
+  background: #003529;
+  padding-top: 60px;
+  .footer__menu{
+    margin-bottom: 60px;
+    .menu__item{
+      margin-top: 35px;
+      a{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.03em;
+      }
+      &:nth-child(1){
+        margin-top: 0;
+      }
+    }
+  }
+  .socials{
+    z-index: 100;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 116px;
+    width: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items:center;
+    @media screen and (max-width: 320px) {
+      justify-content: center;
+    }
+    a{
+      @media screen and (max-width: 320px) {
+        margin-right: 5px;
+      }
+    }
+    a[href="#first"]{
+      @media screen and (max-width: 320px) {
+        right: -52px;
+      }
+    }
+    .socials__item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 53px;
+      width: 53px;
+      background: #00775D;
+      border-radius: 5px;
+      line-height: 53px;
+      text-align: center;
+
+      @media screen and (max-width: 320px) {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+      }
+      .fa{
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+  .socials__item{
+    display: inline-block;
+    height: 53px;
+    width: 53px;
+    background: #00775D;
+    border-radius: 5px;
+    line-height: 53px;
+    text-align: center;
+    a{
+      @media screen and (max-width: 320px) {
+        margin-right: 2px;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+    }
+    .fa{
+      color: #fff;
+      font-size: 20px;
+    }
+    &:hover{
+      background: darken(#00775D, 5%);
+    }
+  }
+  .one__item{
+    margin-top: 65px;
+  }
+  .footer__contacts{
+    margin-top: 17px;
+    .contacts__item{
+      margin-top: 28px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: 0;
+      &:nth-child(1){
+        margin-top: 0;
+        position: relative;       
+        a{
+          &:before{
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 40%;
+            background: url(../img/icons/phone_footer.png) center center no-repeat;
+            background-size: cover;
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+      }
+      a{
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+  }
+  .footer__down{
+    line-height: 60px;
+    height: 60px;
+    background:#00251D;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,95 @@
+@import "costome_colors.scss";
+
+section#registration{
+	padding-bottom: 60px;
+	.section__caption{
+		background:#FAFAFA;
+		padding-bottom: 123px;
+		padding-top: 60px;
+		@media screen and (max-width: 767px) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+	h2{
+		text-align: center;
+	}
+	.tabs{
+		.container{
+			position: relative;
+			.list__one{
+				z-index:3;
+				top: -40px;
+				left: -350px;
+			}
+			.list__six{
+				z-index:3;
+				bottom: 250px;
+				right: -310px;
+			}
+		}
+		@media screen and (max-width: 767px) {
+				//padding-top: 60px;
+				margin-top: 0;
+			}
+		.tabs__caption{
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+		}
+		.tabs__content{
+			margin-top: 60px;
+			@media screen and (max-width: 767px) {
+				margin-top: 30px;
+			}
+			.contacts__form{
+				h3{
+					letter-spacing: 0;
+					padding-left: 60px;
+					position: relative;
+					@media screen and (max-width: 375px) {
+						font-size: 16px;
+					}
+					&:before{
+						position: absolute;
+						content:'';
+						display: block;
+						background: url(../img/icons/signup.png) center center no-repeat;
+						background-size: cover;
+						width: 41px;
+						height: 41px;
+						left: 0;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+				.order{
+					#name{
+						margin-top: 40px;
+					}
+					input{
+						width: 100%;
+						height: 40px;
+						border-radius: 5px;
+						border: 1px solid #93959A;
+						line-height: 40px;
+						padding-left: 13px;
+						color: #93959A;
+						font-size: 16px;
+						margin-top: 15px;
+						&:hover, &:focus, &:active{
+							border: 1px solid #000;
+						}
+					}
+					.btn__yellow{
+						margin-top: 40px;
+						width: 220px;
+					}
+				}
+			}
+		}
+	}
+	.about__caption{
+		display: none;	
+	}
+}

@@ -1,0 +1,10 @@
+//= vendor/jquery.min.js
+//= vendor/jquery-migrate-3.0.0.min.js
+//= vendor/bootstrap.min.js
+//= vendor/tabs.js
+//= vendor/jquery.magnific-popup.min.js
+//= vendor/slick.js
+//= vendor/waypoints.min.js
+//= vendor/animate-css.js
+//= vendor/wow.js
+//= vendor/jquery.equalheights.js

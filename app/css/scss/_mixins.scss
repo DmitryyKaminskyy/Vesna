@@ -1,0 +1,23 @@
+@mixin light{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin reg {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin regit {
+  font-family: 'Roboto';
+  font-weight: 400;
+ font-style: italic;
+}
+
+@mixin bold{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}

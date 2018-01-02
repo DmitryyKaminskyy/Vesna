@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	//= template/title.html
+	
+</head>
+
+<body>
+
+//= template/modernizr.html
+
+<section id="registration">
+	
+	//= template/header.html
+
+	<div class="section__caption">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>РЕГИСТРАЦИЯ</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tabs">
+		<div class="container">
+			<div class="list__one"></div>
+			<div class="list__six"></div>
+			<div class="row">
+				<div class="col-md-12">
+
+					<ul class="tabs__caption">
+						<li class="active" id="about_li_1">Для руководителей аптек и АС</li>
+						<li id="about_li_2">Для производителей</li>
+					</ul>
+
+				  	<div class="tabs__content active" id="about_1">
+
+					  	<div class="row">
+					  		<div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 col-xs-12">
+					  			<div class="contacts__form">
+					  				<h3>Мы гарантируем сохранность ваших персональних данных</h3>
+					  				<div class="row">
+					  					<div class="col-md-12">
+					  						<form class="order js-form" action="registration_apt.php" id="popupResult">
+					  						
+					  							<input type="text" name="first_name" class="order__input" placeholder="Ваша фамилия:" required id="first_name"><br>
+
+					  							<input type="text" name="last_name" class="order__input" placeholder="Ваше Имя, Отчество:" required id="last_name"><br>
+
+					  							<input type="text" name="date_birth" class="order__input" placeholder="Дата рождения" required id="date_birth"><br>
+					  		
+					  							<input type="text" name="tel" class="order__input" placeholder="Ваш телефон:" required id="tel"><br>
+					  		
+					  							<input type="text" name="city" class="order__input" placeholder="Ваш город:" required id="city"><br>
+					  		
+					  							<input type="text" name="company" class="order__input" placeholder="Название Вашей аптеки или компании:" required id="company"><br>
+					  		
+					  							<div class="btn__yellow hvr-ripple-in" registration>регистрация</div>
+
+					  						</form>
+					  					</div>
+					  				</div>	
+					  			</div>
+					  		</div>
+					  	</div>
+				  	</div>
+
+					<div class="tabs__content" id="about_2">
+						<div class="row">
+							<div class="col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 col-xs-12">
+								<div class="contacts__form">
+									<h3>Мы гарантируем сохранность ваших персональних данных</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<form class="order js-form" action="registration_prod.php" id="popupResult">
+											
+												<input type="text" name="first_name" class="order__input" placeholder="Ваша фамилия:" required id="first_name"><br>
+
+												<input type="text" name="last_name" class="order__input" placeholder="Ваше Имя, Отчество:" required id="last_name"><br>
+
+												<input type="text" name="date_birth" class="order__input" placeholder="Дата рождения" required id="date_birth"><br>
+							
+												<input type="text" name="tel" class="order__input" placeholder="Ваш телефон:" required id="tel"><br>
+							
+												<input type="text" name="city" class="order__input" placeholder="Ваш город:" required id="city"><br>
+							
+												<input type="text" name="company" class="order__input" placeholder="Название Вашей аптеки или компании:" required id="company"><br>
+							
+												<div class="btn__yellow hvr-ripple-in" registration>регистрация</div>
+
+											</form>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</div>	
+</section>
+
+//= template/footer.html
+
+//= template/loader_registration.html
+
+//= template/scripts.html
+
+</body>
+</html>

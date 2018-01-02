@@ -1,0 +1,125 @@
+@import "costome_colors.scss";
+
+section#first__events{
+	padding-bottom: 60px;
+	.section__caption{
+		background:#FAFAFA;
+		padding-bottom: 123px;
+		padding-top: 60px;
+	}
+	h2{
+		text-align: center;
+	}
+	.tabs{
+		.container{
+			position: relative;
+			.list__one{
+				z-index:3;
+				top: -40px;
+				left: -350px;
+			}
+			.list__six{
+				z-index:3;
+				bottom: 250px;
+				right: -310px;
+			}
+		}
+		.tabs__content{
+			margin-top: 60px;
+			.news__wrapper{
+				margin-top: 60px;
+				h3{
+					letter-spacing: -0.01em;
+					padding-left: 70px;
+					position: relative;
+					&:after{
+						content: '';
+						position: absolute;
+						width: 43px;
+						height: 53px;
+						top: 0;
+						left: 0;
+						background: url(../img/icons/micric.png) center center no-repeat;
+						background-size: cover;
+					}
+				}
+				.row{
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.news__img{
+						img{
+							width: 100%; //570px
+							height: 250px;
+						}
+						margin-top: 40px;
+					}
+					.news__content{
+						margin-top: 40px;
+						.content__data{
+							position: relative;
+							display: inline-block;
+							font-weight: 400;
+							font-size: 18px;
+							font-style: italic;
+							line-height: 1.5em;
+							padding-left: 47px;
+							margin-right: 37px;
+							&:before{
+								top: 0;
+								left: 0;
+								position: absolute;
+								content: '';
+								display: block;
+								width: 31px;
+								height: 29px;
+								background: url(../img/icons/kalendar.png) center center no-repeat;
+								background-size: cover;
+
+							}
+						}
+						.content__data__city{
+							position: relative;
+							display: inline-block;
+							font-weight: 400;
+							font-size: 18px;
+							font-style: italic;
+							line-height: 1.5em;
+							padding-left: 47px;
+							&:before{
+								top: 0;
+								left: 0;
+								position: absolute;
+								content: '';
+								display: block;
+								width: 31px;
+								height: 29px;
+								background: url(../img/icons/karta.png) center center no-repeat;
+								background-size: cover;
+
+							}
+						}
+						.content__text{
+							span{
+								text-transform: uppercase;
+							}
+							font-weight: 400;
+							letter-spacing: 0.01em;
+							margin-top: 25px;
+						}
+						.btn__yellow{
+							margin-top: 27px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.about__caption{
+		display: none;	
+	}
+}

@@ -1,0 +1,75 @@
+@import "costome_colors.scss";
+
+section#kak__vstupit{
+	padding-bottom: 60px;
+	.main__content{
+		margin-top: 60px;
+		.container{
+			position: relative;
+			.list__nine{
+				top: 110px;
+				left: -330px;
+			}
+			.list__third{
+				top: 140px;
+				right: -370px;
+			}
+		}
+		h2{
+			text-align: center;
+		}
+		.caption__text{
+			text-align: center;
+			margin-top: 60px;
+			span{
+				font-weight: 700;
+				font-size: 16px;
+			}
+		}
+		.caption__text.two{
+			margin-top: 35px;
+		}
+		.caption__enter{
+			line-height: 1.8em;
+			margin-top: 60px;
+			text-align: center;
+			letter-spacing: 0;
+		}
+		.enter{
+			margin-top: 40px;
+			.enter__item{
+				.item__wrapper{
+					text-align: center;
+					.item__img{
+						height: 100px;
+						img{
+							vertical-align: top;
+							display: inline-block;
+						}
+					}
+					.item__text{
+						line-height: 1.5em;
+					}
+					.btn__yellow{
+						width: 185px;
+						font-size: 15px;
+						font-weight: 700;
+						margin-top: 10px;
+						&:nth-child(3){
+							margin-top: 30px;
+						}
+					}
+					.btn_transperent_grey{
+						margin-top: 10px;
+						font-size: 15px;
+						letter-spacing: 0;
+					}
+				}	
+			}
+		}
+		.footnote{
+			margin-top: 30px;
+			opacity: 0.7;
+		}
+	}
+}
