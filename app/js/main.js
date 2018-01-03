@@ -817,6 +817,11 @@ $(document).ready(function() {
   });
 });
 
+$('#time_msk').datetimepicker({
+  datepicker:false,
+  format:'H:i'
+});
+
 // $(document).ready(function() {
 //   var doc_w = $(document).width();
 //   if (doc_w >= 992){

@@ -8,3 +8,5 @@
 //= vendor/animate-css.js
 //= vendor/wow.js
 //= vendor/jquery.equalheights.js
+//= vendor/jquery-ui.min.js
+//= vendor/jquery.datetimepicker.full.min.js
