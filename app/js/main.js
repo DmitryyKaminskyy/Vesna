@@ -822,6 +822,26 @@ $('#time_msk').datetimepicker({
   format:'H:i'
 });
 
+$('#date_birth_apt, #date_birth_prod').datetimepicker({
+  lang: 'ru',
+  i18n:{ru:{ // Russian
+        months: [
+          'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь',
+        ],
+        dayOfWeekShort: [
+          "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб",
+        ],
+        dayOfWeek: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота",]
+      }},
+  timepicker: false,
+  //showOtherMonths: true,
+  //selectOtherMonths: true,
+  format: 'm.d.Y',
+  
+});
+
+
+
 // $(document).ready(function() {
 //   var doc_w = $(document).width();
 //   if (doc_w >= 992){
