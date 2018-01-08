@@ -10,7 +10,11 @@ $company = htmlspecialchars($_POST["company"]);
 $refferer = getenv('HTTP_REFERER');
 $date=date("d.m.y"); // число.месяц.год  
 $time=date("H:i"); // часы:минуты:секунды 
-$myemail = "oleg.zhakov@onlinecbt.ru";
+$myemail = "drakon2000@ukr.net";
+
+$koren = $_SERVER['HTTP_HOST'];
+$xls = $koren.'/leads.xls';
+$txt = $koren.'/leads.txt';
 
 $tema = "Заявка с сайта на обратный звонок";
 $message_to_myemail = "Поступила новая заявка с сайта:
@@ -40,8 +44,8 @@ $message_to_myemail = "Поступила новая заявка с сайта:
 		<td style='padding: 10px; border: #e9e9e9 1px solid;'>$refferer</td>
 	</tr>
 </table><br>
-<a download href='http://test1.kaminskiydmitriy.com/leads.xls'>Скачать полный список заявок в xls-формате</a><br><br>
-<a download href='http://test1.kaminskiydmitriy.com/leads.txt'>Скачать полный список заявок в txt-формате</a><br>
+<a download href='$koren/leads.xls'>Скачать полный список заявок в xls-формате</a><br><br>
+<a download href='$koren/leads.txt'>Скачать полный список заявок в txt-формате</a><br>
 ";
 mail($myemail, $tema, $message_to_myemail, "From: Vesna.ru <drakon2000@ukr.net> \r\n"."Content-type: text/html; charset=utf-8\r\n" );
 
