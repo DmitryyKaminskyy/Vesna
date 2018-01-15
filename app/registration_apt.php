@@ -41,8 +41,8 @@ $message_to_myemail = "Поступила регистрация руковод�
 		<td style='padding: 10px; border: #e9e9e9 1px solid;'>$company</td>
 	</tr>
 </table><br>
-<a download href='http://test1.kaminskiydmitriy.com/leads_apt.xls'>Скачать полный список заявок в xls-формате</a><br><br>
-<a download href='http://test1.kaminskiydmitriy.com/leads_apt.txt'>Скачать полный список заявок в txt-формате</a><br>
+<a download href='http://vesna-apteka.ru/leads_apt.xls'>Скачать полный список заявок в xls-формате</a><br><br>
+<a download href='http://vesna-apteka.ru/leads_apt.txt'>Скачать полный список заявок в txt-формате</a><br>
 ";
 mail($myemail, $tema, $message_to_myemail, "From: Vesna.ru <drakon2000@ukr.net> \r\n"."Content-type: text/html; charset=utf-8\r\n" );
 
@@ -68,23 +68,34 @@ $tofile = "'$first_name';'$last_name';'$date_birth';'$tel';'$city';'$company'; '
 $bom = "\xEF\xBB\xBF";
 file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
-$f = fopen("leads_apt.txt", "a+");
-fwrite($f,"===================================================================\n
-	Регистрционные данные руководителя аптеки:\n
-	Фамилия: $first_name\n
-	Имя Отчество: $last_name\n
-	Дата рождения: $date_birth\n
+$file_1 = 'leads_apt.txt';
+$tofile_1 = "===================================================================\n
+	Имя клиента: $name\n
 	Телефон: $tel\n
+	Удобное время для звонка (по мск): $time_msk\n
 	Город: $city\n
 	Компания: $company\n
 	Время заявки: $date / $time\n
-	Источник: $refferer\n\n");  
+	Источник: $refferer\n\n";
+file_put_contents($file_1, $bom . $tofile_1 . file_get_contents($file_1));
+
+//$f = fopen("leads_apt.txt", "a+");
+//fwrite($f,"===================================================================\n
+//	Регистрционные данные руководителя аптеки:\n
+//	Фамилия: $first_name\n
+//	Имя Отчество: $last_name\n
+//	Дата рождения: $date_birth\n
+//	Телефон: $tel\n
+//	Город: $city\n
+//	Компания: $company\n
+//	Время заявки: $date / $time\n
+//	Источник: $refferer\n\n");  
 // fwrite($f," Имя клиента: $name\n\n");    
 // fwrite($f," Телефон: $tel\n\n");
 // fwrite($f," Удобное время для звонка (по мск): $time_msk\n\n");
 // fwrite($f," Город: $city\n\n");
 // fwrite($f," Компания: $company\n\n");
 // fwrite($f," \n\n");    
-fclose($f);
+//fclose($f);
 
 ?>

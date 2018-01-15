@@ -665,10 +665,14 @@ $('.partnyor__slider').slick({
   edgeFriction: 0.15,
   variableWidth: true,
   focusOnSelect: true,
+  //centerPadding: '60px',
   //centerPadding: true,
+  pauseOnFocus: true,
+  pauseOnHover: true,
   speed: 300,
   autoplay: true,
-  lazyLoad: 'ondemand',
+  autoplaySpeed: 2000,
+  //lazyLoad: 'ondemand',
     responsive: [
      {
         breakpoint: 600,
@@ -773,7 +777,7 @@ $('.slider__description').slick({
 $(function () {
   var location = window.location.href;
   var cur_url = location.split('/').pop();
-  //console.log(cur_url);
+  //console.log(location);
   $('header .menu .main__menu .menu__item').each(function () {
     var link = $(this).find('a').attr('href');
 

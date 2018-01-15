@@ -115,6 +115,18 @@ footer{
             background-size: cover;
             width: 14px;
             height: 14px;
+            @media screen and (max-width: 1200px) {
+              left: 25%;
+            }
+            @media screen and (max-width: 992px) {
+              left: -17%;
+            }
+            @media screen and (max-width: 783px) {
+              left: -12%;
+            }
+            @media screen and (max-width: 513px) {
+              left: 40%;
+            }
           }
         }
 

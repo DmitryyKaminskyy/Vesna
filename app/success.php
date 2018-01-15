@@ -44,8 +44,8 @@ $message_to_myemail = "Поступила новая заявка с сайта:
 		<td style='padding: 10px; border: #e9e9e9 1px solid;'>$refferer</td>
 	</tr>
 </table><br>
-<a download href='$koren/leads.xls'>Скачать полный список заявок в xls-формате</a><br><br>
-<a download href='$koren/leads.txt'>Скачать полный список заявок в txt-формате</a><br>
+<a download href='http://kaminskiydmitriy.com/portfolio/vesna/leads.xls'>Скачать полный список заявок в xls-формате</a><br><br>
+<a download href='http://kaminskiydmitriy.com/portfolio/vesna/leads.txt'>Скачать полный список заявок в txt-формате</a><br>
 ";
 mail($myemail, $tema, $message_to_myemail, "From: Vesna.ru <drakon2000@ukr.net> \r\n"."Content-type: text/html; charset=utf-8\r\n" );
 
@@ -72,21 +72,32 @@ $tofile = "'$name';'$tel';'$time_msk';'$city';'$company';'$date';'$time'\n";
 $bom = "\xEF\xBB\xBF";
 file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
-$f = fopen("leads.txt", "a+");
-fwrite($f,"===================================================================\n
+$file_1 = 'leads.txt';
+$tofile_1 = "===================================================================\n
 	Имя клиента: $name\n
 	Телефон: $tel\n
 	Удобное время для звонка (по мск): $time_msk\n
 	Город: $city\n
 	Компания: $company\n
 	Время заявки: $date / $time\n
-	Источник: $refferer\n\n");  
+	Источник: $refferer\n\n";
+file_put_contents($file_1, $bom . $tofile_1 . file_get_contents($file_1));
+
+//$f = fopen("leads.txt", "a+");
+//fwrite($f,"===================================================================\n
+//	Имя клиента: $name\n
+//	Телефон: $tel\n
+//	Удобное время для звонка (по мск): $time_msk\n
+//	Город: $city\n
+//	Компания: $company\n
+//	Время заявки: $date / $time\n
+//	Источник: $refferer\n\n");  
 // fwrite($f," Имя клиента: $name\n\n");    
 // fwrite($f," Телефон: $tel\n\n");
 // fwrite($f," Удобное время для звонка (по мск): $time_msk\n\n");
 // fwrite($f," Город: $city\n\n");
 // fwrite($f," Компания: $company\n\n");
 // fwrite($f," \n\n");    
-fclose($f);
+//fclose($f);
 
 ?>

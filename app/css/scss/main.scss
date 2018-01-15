@@ -57,6 +57,11 @@ section#first{
 			font-size: 20px;
 			font-weight: 300;
 			line-height: 1.5em;
+			br{
+				@media screen and (max-width: 992px) {
+					display: none;
+				}
+			}
 		}
 	}
 	.col-md-6:nth-child(1){
